@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Step Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer>
+        
+    </script>
 </head>
 <body>
     <div class="form">
@@ -44,12 +47,11 @@
             <!-- step-1-start -->
             <div class="stp step1">
                 <div class="header">
-                    <h1 class="title">Personal</h1>
+                    <h1 class="title">Personal Info</h1>
                     <p class="exp">
                         Please provide your name, email address, and phone number
                     </p>
                 </div>
-            </div>
             <form>
                 <div class="label">
                     <label for="name">Name</label>
@@ -72,14 +74,15 @@
                     Next Step
                 </button>
             </div>
+        </div>
             <!-- Step 2 Start -->
             <div class="stp step2">
                 <div class="header">
                     <h1 class="title">Select you plan</h1>
-                    <p class="exp">Ypu have the option of monthly or yearly billing.</p>
+                    <p class="exp">You have the option of monthly or yearly billing.</p>
                 </div>
                 <form action="">
-                    <div class="plan-card slected">
+                    <div class="plan-card selected">
                         <img src="images/icon-arcade.svg" alt="Arcade">
                         <div class="plan-info chosen">
                             <b>Arcade</b>
@@ -111,7 +114,7 @@
                 </div>
                 <div class="btns">
                     <button class="prev-stp" type="button">Go Back</button>
-                    <button class="prev-stp" type="submit">Next Step</button>
+                    <button class="next-stp" type="submit">Next Step</button>
                 </div>
             </div>
 
@@ -122,7 +125,7 @@
                     <h1 class="title">Pick add-ons</h1>
                     <p class="exp">Add-ons helps enhance your gaming experience</p>
                 </div>
-                <form action="">
+                <form >
                     <div class="box" data-id="1">
                         <input type="checkbox" id="online">
                         <div class="description">
@@ -150,7 +153,7 @@
                 </form>
                 <div class="btns">
                     <button class="prev-stp" type="button">Go Back</button>
-                    <button class="prev-stp" type="submit">Next Step</button>
+                    <button class="next-stp" type="submit">Next Step</button>
                 </div>
             </div>
             <!-- step 3 end -->
@@ -168,7 +171,7 @@
                             <p class="plan-name">Arcade(Monthly)</p>
                             <p class="plan-price">$9/mo</p>
                         </div>
-                        <br>
+                        <hr>
                         <div class="addons">
                             <template>
                                 <div class="selected-addons">
@@ -182,7 +185,7 @@
                 </div>
                 <div class="btns">
                     <button class="prev-stp" type="button">Go Back</button>
-                    <button class="prev-stp" type="submit">Next Step</button>
+                    <button class="next-stp" type="submit">Next Step</button>
                 </div>
             </div>
             <!-- step 4 ends -->
@@ -195,10 +198,15 @@
                         Thanks for confirming your subscription! We hope have fun using our platform. For more enquiry or complaint, sends us a mail at support@ipumgame.com.
                     </p>
                 </div>
-                button.next-stp
+                <div class="btns">
+                    <button class="prev-stp" type="button">Go Back</button>
+                    <button class="next-stp" type="submit">Next Step</button>
+                </div>
             </div>
             <!-- step 5 end -->
         </div>
     </div>
+    
+    
 </body>
 </html>
